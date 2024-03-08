@@ -5,6 +5,7 @@
 [protobuf-dev](https://github.com/ajiyoshi-vg/asdf-protobuf-dev) plugin for the [asdf version manager](https://asdf-vm.com).
 
 * The similar plugin [asdf-protoc](https://github.com/paxosglobal/asdf-protoc) uses the official release builds of protoc. The release builds of protoc do not include the header files. For times when the header files are needed, I created the asdf-protobuf-dev plugin.
+* I usually use [mise, a faster tool that is compatible with asdf](https://mise.jdx.dev/), instead of asdf itself.
 
 </div>
 
