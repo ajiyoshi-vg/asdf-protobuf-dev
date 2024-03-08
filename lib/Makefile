@@ -7,7 +7,7 @@ ASDF_DOWNLOAD_PATH ?= $(abspath ../tmp)
 REF ?= main
 PROTO_REPO := https://github.com/protocolbuffers/protobuf
 PROTO_SOURCE := $(ASDF_DOWNLOAD_PATH)/protobuf
-PROTO_PREFIX := $(ASDF_INSTALL_PATH)/$(REF)
+PROTO_PREFIX := $(ASDF_INSTALL_PATH)
 
 CMAKE_OPTION := -DCMAKE_CXX_STANDARD=14
 
