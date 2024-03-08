@@ -36,7 +36,6 @@ install: $(PROTO_SOURCE)/cmake.tmpdir
 	cmake --build $< --parallel 10 --config Release
 	cmake --install $<
 	rm -rf $<
-	$(PROTO_PREFIX)/bin/protoc --version
 
 %.tmpdir:
 	mkdir -p $@
