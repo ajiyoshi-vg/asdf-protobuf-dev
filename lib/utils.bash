@@ -3,7 +3,7 @@
 set -euo pipefail
 
 export GH_REPO=https://github.com/protocolbuffers/protobuf
-TOOL_NAME="build-protobuf"
+TOOL_NAME="protobuf-dev"
 
 fail() {
 	echo -e "asdf-$TOOL_NAME: $*"

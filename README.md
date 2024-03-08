@@ -1,8 +1,8 @@
 <div align="center">
 
-# asdf-build-protobuf [![Build](https://github.com/ajiyoshi-vg/asdf-build-protobuf/actions/workflows/build.yml/badge.svg)](https://github.com/ajiyoshi-vg/asdf-build-protobuf/actions/workflows/build.yml) [![Lint](https://github.com/ajiyoshi-vg/asdf-build-protobuf/actions/workflows/lint.yml/badge.svg)](https://github.com/ajiyoshi-vg/asdf-build-protobuf/actions/workflows/lint.yml)
+# asdf-protobuf-dev [![Build](https://github.com/ajiyoshi-vg/asdf-protobuf-dev/actions/workflows/build.yml/badge.svg)](https://github.com/ajiyoshi-vg/asdf-protobuf-dev/actions/workflows/build.yml) [![Lint](https://github.com/ajiyoshi-vg/asdf-protobuf-dev/actions/workflows/lint.yml/badge.svg)](https://github.com/ajiyoshi-vg/asdf-protobuf-dev/actions/workflows/lint.yml)
 
-[build-protobuf](https://github.com/ajiyoshi-vg/asdf-build-protobuf) plugin for the [asdf version manager](https://asdf-vm.com).
+[protobuf-dev](https://github.com/ajiyoshi-vg/asdf-protobuf-dev) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -23,25 +23,25 @@
 Plugin:
 
 ```shell
-asdf plugin add build-protobuf
+asdf plugin add protobuf-dev
 # or
-asdf plugin add build-protobuf https://github.com/ajiyoshi-vg/asdf-build-protobuf.git
+asdf plugin add protobuf-dev https://github.com/ajiyoshi-vg/asdf-protobuf-dev.git
 ```
 
-build-protobuf:
+protobuf-dev:
 
 ```shell
 # Show all installable versions
-asdf list-all build-protobuf
+asdf list-all protobuf-dev
 
 # Install specific version
-asdf install build-protobuf latest
+asdf install protobuf-dev latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global build-protobuf latest
+asdf global protobuf-dev latest
 
-# Now build-protobuf commands are available
-build-protobuf --help
+# Now protobuf-dev commands are available
+protobuf-dev --help
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -51,7 +51,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/ajiyoshi-vg/asdf-build-protobuf/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/ajiyoshi-vg/asdf-protobuf-dev/graphs/contributors)!
 
 # License
 
