@@ -6,7 +6,7 @@ ASDF_DOWNLOAD_PATH ?= $(abspath ../tmp)
 
 REF ?= main
 PROTO_REPO := https://github.com/protocolbuffers/protobuf
-PROTO_SOURCE := $(ASDF_DOWNLOAD_PATH)/protobuf/$(REF)
+PROTO_SOURCE := $(ASDF_DOWNLOAD_PATH)/protobuf
 PROTO_PREFIX := $(ASDF_INSTALL_PATH)/$(REF)
 
 CMAKE_OPTION := -DCMAKE_CXX_STANDARD=14
@@ -26,7 +26,7 @@ list_all_versions:
 
 download:
 	git clone $(PROTO_REPO) -b $(REF) --depth 1 $(PROTO_SOURCE)
-	git submodule update --init --recursive $(PROTO_SOURCE)
+	cd $(PROTO_SOURCE) && git submodule update --init --recursive
 
 install: $(PROTO_SOURCE)/cmake.tmpdir
 	cd $< && \
