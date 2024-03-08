@@ -2,9 +2,7 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/ajiyoshi-vg/asdf-build-protobuf"
 TOOL_NAME="build-protobuf"
-TOOL_TEST="build-protobuf --help"
 
 fail() {
 	echo -e "asdf-$TOOL_NAME: $*"

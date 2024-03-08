@@ -2,7 +2,6 @@
 
 set -euo pipefail
 
-
 source "${ASDF_PLUGIN_PATH}/lib/utils.bash"
 
 if [ "$ASDF_INSTALL_TYPE" != "version" ]; then
@@ -10,6 +9,6 @@ if [ "$ASDF_INSTALL_TYPE" != "version" ]; then
 fi
 
 # Download tar.gz file to the download directory
-make -C ${ASDF_PLUGIN_PATH}/lib install REF="v$ASDF_INSTALL_VERSION" || (
-	fail "An error occurred while installing $TOOL_NAME $version."
+make -C "${ASDF_PLUGIN_PATH}/lib" install REF="v$ASDF_INSTALL_VERSION" || (
+	fail "An error occurred while installing $TOOL_NAME $ASDF_INSTALL_VERSION."
 )

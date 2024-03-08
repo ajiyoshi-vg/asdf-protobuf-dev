@@ -5,5 +5,5 @@ set -euo pipefail
 source "${ASDF_PLUGIN_PATH}/lib/utils.bash"
 
 # Download tar.gz file to the download directory
-make download -C ${ASDF_PLUGIN_PATH}/lib REF="v$ASDF_INSTALL_VERSION" \
-	|| fail "Could not clone protobuf $ASDF_INSTALL_VERSION"
+make download -C "${ASDF_PLUGIN_PATH}/lib" REF="v$ASDF_INSTALL_VERSION" ||
+	fail "Could not clone protobuf $ASDF_INSTALL_VERSION"

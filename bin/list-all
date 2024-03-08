@@ -4,4 +4,4 @@ set -euo pipefail
 
 source "${ASDF_PLUGIN_PATH}/lib/utils.bash"
 
-make list_all_versions -C ${ASDF_PLUGIN_PATH}/lib | sort_versions | xargs echo
+make list_all_versions -C "${ASDF_PLUGIN_PATH}/lib" | sort_versions | xargs echo
