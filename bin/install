@@ -2,13 +2,15 @@
 
 set -euo pipefail
 
-source "${ASDF_PLUGIN_PATH}/lib/utils.bash"
+current_script_path=${BASH_SOURCE[0]}
+plugin_dir=$(dirname "$(dirname "$current_script_path")")
+source "${plugin_dir}/lib/utils.bash"
 
 if [ "$ASDF_INSTALL_TYPE" != "version" ]; then
 	fail "asdf-$TOOL_NAME supports release installs only"
 fi
 
 # Download tar.gz file to the download directory
-make -C "${ASDF_PLUGIN_PATH}/lib" install REF="v$ASDF_INSTALL_VERSION" || (
+make -C "${plugin_dir}/lib" install REF="v$ASDF_INSTALL_VERSION" || (
 	fail "An error occurred while installing $TOOL_NAME $ASDF_INSTALL_VERSION."
 )

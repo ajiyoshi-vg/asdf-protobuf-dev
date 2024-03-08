@@ -2,8 +2,10 @@
 
 set -euo pipefail
 
-source "${ASDF_PLUGIN_PATH}/lib/utils.bash"
+current_script_path=${BASH_SOURCE[0]}
+plugin_dir=$(dirname "$(dirname "$current_script_path")")
+source "${plugin_dir}/lib/utils.bash"
 
 # Download tar.gz file to the download directory
-make download -C "${ASDF_PLUGIN_PATH}/lib" REF="v$ASDF_INSTALL_VERSION" ||
+make download -C "${plugin_dir}/lib" REF="v$ASDF_INSTALL_VERSION" ||
 	fail "Could not clone protobuf $ASDF_INSTALL_VERSION"
